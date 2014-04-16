@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Laura Varrone - LV Design Studio - Galleries</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="imagetoolbar" content="false">
+<meta name="description" content="A creative studio for all your graphic design needs in print and on the web - logos, brochures, newsletters, direct mail, email, catalogs, editorial, advertising, and signage." />
+<meta name="keywords" content="graphic design, print, web, logos, brochures, newsletters, direct mail, email, catalogs, editorial, advertising, signage, branding, business identity, corporate identity" />
+<!--	<link href="file:///C|/Users/RGS/Documents/galleria/galleria.css" rel="stylesheet" type="text/css" media="screen">
+-->	
+<!--	<script type="text/javascript" src="file:///C|/Users/RGS/Documents/galleria/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="file:///C|/Users/RGS/Documents/galleria/jquery.galleria.js"></script>-->
+	<link href="galleria.css" rel="stylesheet" type="text/css" media="screen">
+	<script type="text/javascript" src="jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="jquery.galleria.js"></script>
+	<script type="text/javascript">
+	
+	jQuery(function($) {
+		
+		$('.gallery_demo_unstyled').addClass('gallery_demo'); // adds new class name to maintain degradability
+		$('.nav').css('display','none'); // hides the nav initially
+		
+		$('ul.gallery_demo').galleria({
+			history   : false, // deactivates the history object for bookmarking, back-button etc.
+			clickNext : true, // helper for making the image clickable. Let's not have that in this example.
+			insert    : undefined, // the containing selector for our main image. 
+								   // If not found or undefined (like here), galleria will create a container 
+								   // before the ul with the class .galleria_container (see CSS)
+			onImage   : function() { $('.nav').css('display','block'); } // shows the nav when the image is showing
+		});
+	});
+	
+	</script>
+<style media="screen,projection" type="text/css">
+	
+	/* BEGIN DEMO STYLE */
+	*{margin:0;padding:0}
+	body{padding:20px;background:white;background:white;color:#555;font:80%/140% 'helvetica neue',sans-serif;width:900px;margin: 0 auto;}
+	h1,h2{font:bold 80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	a{color:#348;text-decoration:none;outline:none;}
+	a:hover{color:#67a;}
+	.caption{font:bold 80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;position:absolute;top:450px;left:198px;width:300px;}
+	.demo{position:relative;margin-top:2em;}
+	.gallery_demo{width:200px;float:left;}
+	.gallery_demo li{width:55px;height:70px;border:3px double #eee;margin: 0 2px 2px 0;background:#eee;}
+	.gallery_demo li.hover{border-color:#bbb;}
+	.gallery_demo li.active{border-style:solid;border-color:#222;}
+	.gallery_demo li div{left:240px}
+	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+	
+	.galleria_container{margin:0 auto 60px auto;height:438px;width:700px;float:right;}
+	
+	.nav{padding-top:15px;clear:both;}
+	
+	.info{text-align:left;margin:30px 0;border-top:1px dotted #221;padding-top:30px;clear:both;}
+	.info p{margin-top:1.6em;}
+	
+	.nav{
+	position:absolute;
+	top:410px;
+	left:0;
+	z-index: 2;
+}
+    #logo_menu {
+	position: relative;
+}
+    #img1 {
+	position:absolute;
+	left:40%;
+	top:500px;
+	z-index: -1;
+}
+</style>
+	</head>
+
+<body>
+<div class="top" id="logo_menu">
+<img name="galleries_nav_fashion" src="images/nav_fine_art_9.jpg" width="1024" border="0" id="galleries_nav_fashion" usemap="#m_galleries_nav_fashion" alt="" /><map name="m_galleries_nav_fashion" id="m_galleries_nav_fashion">
+<area shape="rect" coords="277,37,385,54" href="nav_fashion_9.html" title="Fashion" alt="Fashion" />
+<area shape="rect" coords="621,24,788,74" href="index.html" title="Home" alt="Home" />
+<area shape="rect" coords="547,38,601,55" href="contact.html" title="Contact" alt="Contact" />
+<area shape="rect" coords="485,38,524,55" href="nav_fotos_9.html" title="Fotos" alt="Fotos" />
+<area shape="rect" coords="407,38,460,55" href="nav_fine_art_9.html" title="Art" alt="Art" />
+<area shape="rect" coords="148,38,257,55" href="nav_branding_9.html" title="Branding" alt="Branding" />
+</map>
+</div>
+<h1>fine art</h1>
+<div id="img1"> 
+<img src="images/fotos.jpg" />
+</div>
+<div class="demo">
+  <ul class="gallery_demo_unstyled">
+    <li><img src="galleries/3 fine art/vessel_1.jpg" alt="fine art" class="noscale" ></li>
+    <li><img src="galleries/3 fine art/lo_bottles_2.jpg" alt="fine art" ></li>
+    <li><img class="noscale" src="galleries/3 fine art/raku_2vases_3.jpg" alt="fine art" title=""></li>
+    <li><img src="galleries/3 fine art/lo_circles_4.jpg" alt="fine art" title=""></li>
+    <li><img src="galleries/3 fine art/sadness_5.jpg" alt="fine art" title=""></li>
+    <li><img src="galleries/3 fine art/O_circles_6.jpg" alt="fine art" title=""></li>
+    <li><img src="galleries/3 fine art/lo_golden_7.jpg" alt="fine art" class="noscale" title=""></li>
+    <li><img src="galleries/3 fine art/lo_thinbottles_8.jpg" alt="fine art" title=""></li>
+    <li><img class="noscale" src="galleries/3 fine art/white_bubbles_9.jpg" alt="fine art" title=""></li>
+    <li><img class="noscale" src="galleries/3 fine art/white_1.jpg" alt="fine art" title=""></li>
+    <li><img class="noscale" src="galleries/3 fine art/white_2.jpg" alt="fine art" title=""></li>
+    <li><img class="noscale" src="galleries/3 fine art/white_3.jpg" alt="fine art" title=""></li>
+</ul>
+<p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next</a></p>
+</div>
+</body>
+</html>

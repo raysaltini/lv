@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Galleria Demo 2</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="imagetoolbar" content="false">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<link href="galleria.css" rel="stylesheet" type="text/css" media="screen">
+	<script type="text/javascript" src="jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="jquery.galleria.js"></script>
+	<script type="text/javascript">
+	
+	jQuery(function($) {
+		
+		$('.gallery_demo_unstyled').addClass('gallery_demo'); // adds new class name to maintain degradability
+		$('.nav').css('display','none'); // hides the nav initially
+		
+		$('ul.gallery_demo').galleria({
+			history   : false, // deactivates the history object for bookmarking, back-button etc.
+			clickNext : false, // helper for making the image clickable. Let's not have that in this example.
+			insert    : undefined, // the containing selector for our main image. 
+								   // If not found or undefined (like here), galleria will create a container 
+								   // before the ul with the class .galleria_container (see CSS)
+			onImage   : function() { $('.nav').css('display','block'); } // shows the nav when the image is showing
+		});
+	});
+	
+	</script>
+	<style media="screen,projection" type="text/css">
+	
+	/* BEGIN DEMO STYLE */
+	*{margin:0;padding:0}
+	body{padding:20px;background:white;background:white;color:#555;font:80%/140% 'helvetica neue',sans-serif;width:900px;margin: 0 auto;}
+	h1,h2{font:bold 80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	a{color:#348;text-decoration:none;outline:none;}
+	a:hover{color:#67a;}
+	.caption{color:#888;position:absolute;top:250px;left:3px;width:200px;}
+	.demo{position:relative;margin-top:2em;}
+	.gallery_demo{width:200px;float:left;}
+	.gallery_demo li{width:55px;height:70px;border:3px double #eee;margin: 0 2px 2px 0;background:#eee;}
+	.gallery_demo li.hover{border-color:#bbb;}
+	.gallery_demo li.active{border-style:solid;border-color:#222;}
+	.gallery_demo li div{left:240px}
+	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+	
+	.galleria_container{margin:0 auto 60px auto;height:438px;width:700px;float:right;}
+	
+	.nav{padding-top:15px;clear:both;}
+	
+	.info{text-align:left;margin:30px 0;border-top:1px dotted #221;padding-top:30px;clear:both;}
+	.info p{margin-top:1.6em;}
+	
+	.nav{position:absolute;top:410px;left:0;}
+	
+    #logo_menu {
+	position: relative;
+}
+    </style>
+	
+</head>
+<body>
+<div class="top" id="logo_menu"><img src="images/mywork.jpg" width="937" alt="logo"></div>
+<h1>Galleria Demo 02</h1>
+<div class="demo">
+<ul class="gallery_demo_unstyled">
+<!--    <li><img src="images/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
+    <li><img src="images/stones.jpg" alt="Stones" title="Stones - from Aple images"></li>
+    <li><img src="images/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
+    <li><img class="noscale" src="images/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
+    <li><img src="images/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
+-->    <li><img src="images/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
+    <li><img src="images/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
+    <li><img src="images/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
+    <li><img src="images/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
+    <li><img src="images/SEPTEMBER_07_Pulse.jpg" alt="September Pulse" title="Caption text from title"></li>
+    <li><img src="images/alli_ad_pulse.jpg" alt="Alli Pulse Ad" title="Caption text from title"></li>
+    <li><img src="images/front-1.jpg" alt="Postcard Front" title="Caption text from title"></li>
+    <li><img src="images/CD_cover.jpg" alt="CD cover" title="Caption text from title"></li>
+    <li><img src="images/bookmark.jpg" alt="Bookmark" title="Caption text from title"></li>
+</ul>
+<p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next</a></p>
+</div>
+</body>
+</html>
